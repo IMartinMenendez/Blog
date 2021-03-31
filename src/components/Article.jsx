@@ -2,17 +2,16 @@ import React from "react";
 import "./article.css";
 import {Card, CardDeck} from "react-bootstrap";
 
-export function Article() {
+export function Article(props) {
 
     return (
         <CardDeck className="article-Card">
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160"/>
+                <Card.Img variant="top" src={props.img}/>
                 <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>{props.title}</Card.Title>
                     <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
+                        {props.description}
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer>
