@@ -10,7 +10,7 @@ export function Footer() {
 
         <div className="footer row">
             <div className="col col-lg-3 col-md-6 col-sm-6">
-                <h3>About us</h3>
+                <h3>Sobre mi</h3>
                 <p>t is a long established fact that a reader will be distracted by the readable content of a page when
                     looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                     distribution of letters, as opposed to using 'Content here, content here', making it look like
@@ -35,7 +35,7 @@ export function Footer() {
             </div>
 
             <div className="row">
-                <p>Made with ♥️ by Irene Martin</p>
+                <p>Made with ♥️ by <a className="linkPortfolio" href={"https://github.com/IMartinMenendez"}>Irene Martin</a></p>
             </div>
 
         </div>
