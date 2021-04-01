@@ -5,7 +5,22 @@
     justify-content: space-evenly;
     margin-right: 40px;
 }
+.article-Card:last-child{
+    margin-right: 0;
+}
+
+.buttonCard{
+    background-color: #51c2d5;
+}
+
+.buttonCard:hover{
+    background-color: #1687a7;
+}
 
 card{
     margin: 0 50px;
+}
+
+.icons{
+    width: 20px;
 }

@@ -1,0 +1,9 @@
+
+.nextIcon{
+    width: 20px;
+}
+
+.prevIcon{
+    transform: rotate(-180deg);
+    width: 20px;
+}
