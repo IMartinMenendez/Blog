@@ -1,6 +1,10 @@
-
+.iconsP{
+    background-color: black;
+    display: contents;
+    vertical-align: middle;
+}
 .article-Card{
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     width: 450px!important;
     justify-content: space-evenly;
     margin-right: 40px;
@@ -23,4 +27,9 @@ card{
 
 .icons{
     width: 20px;
+    margin: 2%;
+}
+
+.iconFooter{
+    text-align: right;
 }

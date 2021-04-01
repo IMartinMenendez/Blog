@@ -1,14 +1,13 @@
 import React from "react";
-import "./article.css";
-import {Card, CardDeck, Button} from "react-bootstrap";
-import IconChat from "./Icons/chat.png";
+import {Button, Card, CardDeck} from "react-bootstrap";
 import IconImage from "./Icons/like.png";
+import IconChat from "./Icons/chat.png";
+import "./cardArticle.css";
 
-
-export function Article(props) {
+export function CardArticle(props) {
 
     return (
-        <CardDeck className="article-Card">
+        <CardDeck className="CardArticle">
             <Card>
                 <Card.Img variant="top" src={props.img}/>
                 <Card.Body>

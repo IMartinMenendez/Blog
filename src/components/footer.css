@@ -1,0 +1,50 @@
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: #5f939a;
+    vertical-align: middle
+}
+.email{
+    margin: auto;
+    width: fit-content;
+}
+.col {
+    margin: 3% 3% 2%;
+    text-align: center;
+}
+
+.container.footer {
+    background-color: #5f939a;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    width: 100%;
+}
+
+.footer.row {
+    display: flex;
+    /*justify-content: space-evenly;*/
+}
+
+.footer p, .footer h3 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.footer h3{
+   font-size: 40px;
+    margin: 20px;
+}
+.footer p{
+    font-size: 20px;
+    text-align: justify;
+    width: fit-content;
+    margin: auto auto 30px;
+}
+
+.iconsFooter {
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.logoFooter {
+    margin: 10px;
+}

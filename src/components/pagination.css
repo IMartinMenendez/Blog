@@ -1,0 +1,12 @@
+.col-lg-12{
+    margin-bottom: 50px;
+}
+
+.nextIcon{
+    width: 15px;
+}
+
+.prevIcon{
+    transform: rotate(-180deg);
+    width: 15px;
+}
