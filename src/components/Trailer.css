@@ -1,0 +1,23 @@
+.trailer-title{
+    font-size: 20px;
+}
+.text-trailer{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+
+}
+.hr-trailer{
+    width: 30%;
+    /*border: 1px solid;*/
+    background-color: black;
+    border-radius: 1px;
+    margin-bottom: 1px;
+}
+.video{
+    height: 600px;
+    /*margin-bottom: 150px;*/
+}

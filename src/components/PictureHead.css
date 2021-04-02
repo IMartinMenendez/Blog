@@ -1,0 +1,54 @@
+.header_area {
+    z-index: 99;
+    background: #fff;
+    transition: background 0.4s, all 0.3s linear;
+}
+
+.header-picture {
+    align-content: center;
+    display: grid;
+    text-align: center;
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/01/00/55/compass-4891499_1280.jpg");
+}
+
+h1 {
+    color: white;
+    font-size: 70px !important;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+
+.animation {
+    animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+.animation:after {
+    content:"";
+    animation: text 10s linear infinite;
+    opacity: 1;
+}
+
+@keyframes text {
+    0% {
+        content: "Vive historias increibles";
+    }
+    100% {
+        content: "Viaja a millones de lugares";
+    }
+}
