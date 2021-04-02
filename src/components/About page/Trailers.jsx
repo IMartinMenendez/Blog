@@ -1,5 +1,5 @@
 import React from "react";
-import videoTrailer from "./Video/2053 last version.mp4";
+import videoTrailer from "../Video/2053 last version.mp4";
 import "./Trailer.css";
 
 export function Trailers() {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import videoRead from "./Video/read3.mp4";
+import videoRead from "../Video/read3.mp4";
 import {SectionAbout} from "./SectionAbout";
 import {Book} from "./Book";
 import {Comments} from "./Comments";

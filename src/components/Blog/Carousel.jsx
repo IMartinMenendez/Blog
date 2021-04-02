@@ -2,7 +2,7 @@ import React from "react";
 import {Carousel} from "react-bootstrap";
 import {Article} from "./Article";
 import "./carousel.css";
-import IconNext from "./Icons/next.png";
+import IconNext from "../Icons/next.png";
 
 export function CarouselCards() {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./pagination.css";
-import IconNext from "./Icons/next.png";
+import IconNext from "../Icons/next.png";
 
 export function Pagination() {
     return (

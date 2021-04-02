@@ -1,8 +1,8 @@
 import React from "react";
 import "./article.css";
 import {Card, CardDeck, Button} from "react-bootstrap";
-import IconChat from "./Icons/chat.png";
-import IconImage from "./Icons/like.png";
+import IconChat from "../Icons/chat.png";
+import IconImage from "../Icons/like.png";
 
 
 export function Article(props) {
