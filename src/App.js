@@ -6,18 +6,16 @@ import {Footer} from "./components/Footer";
 import {Home} from "./components/Blog/Home";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {About} from "./components/About page/About";
+import {ArticlePage} from "./components/Article Page/ArticlePage";
 
 function App() {
     return (
         <Router>
             <Header/>
             <Switch>
-                <Route path="/About">
-                    <About/>
-                </Route>
-                <Route path="/">
-                    <Home/>
-                </Route>
+                <Route exact path="/About" component={About} />
+                <Route exact path="/Article" component={ArticlePage} />
+                <Route exact path="/" component={Home} />
             </Switch>
             <Footer/>
         </Router>

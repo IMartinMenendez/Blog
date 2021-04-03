@@ -1,0 +1,17 @@
+.picture{
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2019/02/15/11/04/book-3998252_1280.jpg");
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 800px;
+    margin: auto;
+}
+
+.articlePage{
+    font-size: 30px;
+    width: 80%;
+    justify-content: center;
+    margin: auto auto 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
