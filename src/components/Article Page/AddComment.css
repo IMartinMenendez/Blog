@@ -22,3 +22,18 @@
     width: -webkit-fill-available;
     padding-right: 0;
 }
+
+@media (max-width: 1000px) {
+    .comment-form {
+        justify-content: center;
+        margin: auto auto 40px;
+        width: 80%;
+        text-align: left;
+    }
+.name{
+    margin-bottom: 1rem!important;
+    padding-right: 0;
+}
+
+
+}

@@ -21,7 +21,6 @@
 
 .footer.row {
     display: flex;
-    /*justify-content: space-evenly;*/
 }
 
 .footer p, .footer h3 {
@@ -50,4 +49,14 @@
 }
 .linkPortfolio{
     color: white!important;
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        width: 100%;
+        height: 100%;
+        background-color: #5f939a;
+        vertical-align: middle
+    }
+
 }

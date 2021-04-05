@@ -5,3 +5,12 @@
 .search{
     margin-right: 15%;
 }
+@media (max-width: 1000px) {
+    .logoName{
+        margin-left: 0;
+    }
+    .search{
+        margin-right: 0;
+    }
+
+}

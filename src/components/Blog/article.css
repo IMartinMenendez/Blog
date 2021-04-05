@@ -33,3 +33,16 @@ card{
 .iconFooter{
     text-align: right;
 }
+
+@media (max-width: 1000px) {
+    .article-Card{
+        width: 450px!important;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .article-Card:last-child{
+        margin: auto;
+    }
+
+}

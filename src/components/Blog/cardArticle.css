@@ -3,3 +3,11 @@
     justify-content: center ;
     margin: auto auto 70px;
 }
+
+@media (max-width: 1000px) {
+    .CardArticle{
+        justify-content: center ;
+        margin: auto;
+        width: 100% !important;
+    }
+}

@@ -12,6 +12,7 @@
     height: 600px;
     margin: auto;
     background-image: url("https://cdn.pixabay.com/photo/2020/03/01/00/55/compass-4891499_1280.jpg");
+    background-position: center;
 }
 
 h1 {
@@ -51,4 +52,31 @@ h2 {
     100% {
         content: "Viaja a millones de lugares";
     }
+}
+
+@media (max-width: 1000px) {
+
+
+    .header-picture {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+    }
+    .container{
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+    h1 {
+        color: white;
+        font-size: 30px !important;
+        opacity: 1;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    h2 {
+      font-size: 15px;
+    }
+
 }
