@@ -19,7 +19,7 @@
 @media (max-width: 1000px) {
     .picture {
         justify-content: center;
-        background-image: url("https://cdn.pixabay.com/photo/2019/02/15/11/04/book-3998252_1280.jpg");
+        /*background-image: url("https://cdn.pixabay.com/photo/2019/02/15/11/04/book-3998252_1280.jpg");*/
         background-repeat: no-repeat;
         width: 100%;
         height: 400px;
