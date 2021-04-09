@@ -5,23 +5,23 @@ import "./Compose.css";
 export function Compose() {
     return (
         <>
-            <form className="compose">
+            <form action='http://localhost:3001' method="post" className="compose">
                 <div className="form">
-                    <input type="text" className="form-control" id="password" placeholder="Password"/>
+                    <input name="password" type="text" className="form-control" id="password" placeholder="Password"/>
                 </div>
                 <div className="form">
-                    <input type="text" className="form-control" id="Image" placeholder="Image link"/>
+                    <input name="image" type="text" className="form-control" id="Image" placeholder="Image link"/>
                 </div>
                 <div className="form">
-                    <input type="text" className="form-control" id="Title" placeholder="Title"/>
+                    <input name="title" type="text" className="form-control" id="Title" placeholder="Title"/>
                 </div>
                 <div className="form">
-                    <input type="text" className="form-control" id="Subtitle" placeholder="Subtitle"/>
+                    <input name="subtitle" type="text" className="form-control" id="Subtitle" placeholder="Subtitle"/>
                 </div>
                 <div className="form">
-                    <textarea className="form-control mb-10" rows="20" name="message" placeholder="Article"/>
+                    <textarea name="article" className="form-control mb-10" rows="20" placeholder="Article"/>
                 </div>
-                <Button variant="primary" className="button form submit_btn">Post Article</Button>
+                <Button type="submit" variant="primary" className="button form submit_btn">Post Article</Button>
             </form>
 
 

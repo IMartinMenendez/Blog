@@ -7,7 +7,6 @@ export function Header() {
         <div className="header-area">
             <Navbar bg="light" expand="lg" variant="light">
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-
                 <Navbar.Brand className="logoName" href="/">La Ultima página</Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">

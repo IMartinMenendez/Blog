@@ -6,7 +6,6 @@ import IconImage from "../Icons/like.png";
 
 
 export function Article(props) {
-
     return (
         <CardDeck className="article-Card">
             <Card>

@@ -1,24 +1,39 @@
 import React from "react";
 import "./pagination.css";
 import IconNext from "../Icons/next.png";
+import Button from "react-bootstrap/Button";
 
-export function Pagination() {
+
+export function Pagination(props) {
+    // const pageNext = (props.page + 1 );
+
+    const pages = [];
+    for (let i = 0; i < props.totalPages; i++) {
+        pages.push(i);
+    }
+
     return (
         <div className="col-lg-12">
             <nav className="blog-pagination justify-content-center d-flex">
                 <ul className="pagination">
                     <li className="page-item">
-                        <a href="#" className="page-link" aria-label="Previous">
+                        <Button onClick={props.onPreviousPage} className="page-link" aria-label="Previous"
+                                disabled={props.currentPage === 0}>
                             <span><img className="prevIcon" src={IconNext}/></span>
-
-                        </a>
+                        </Button>
                     </li>
-                    <li className="page-item active"><a href="#" className="page-link">1</a></li>
-                    <li className="page-item"><a href="#" className="page-link">2</a></li>
+                    {
+                        pages.map(page =>
+                            <li onClick={() => props.pageClicked(page)} className={props.currentPage === page ? "page-item active" : "page-item"}>
+                                <a href="#" className="page-link">{page + 1}</a>
+                            </li>)
+                    }
+
                     <li className="page-item">
-                        <a href="#" className="page-link" aria-label="Next">
+                        <Button onClick={props.onNextPage} className="page-link"
+                                disabled={(props.currentPage + 1) >= props.totalPages} aria-label="Next">
                             <span><img className="nextIcon" src={IconNext}/></span>
-                        </a>
+                        </Button>
                     </li>
                 </ul>
             </nav>
