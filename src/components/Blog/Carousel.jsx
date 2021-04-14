@@ -12,6 +12,7 @@ export function CarouselCards() {
             <Carousel.Item>
                 <div className="row">
                     <Article
+                        id="-1"
                         img={"https://cdn.pixabay.com/photo/2017/05/29/20/56/coffee-2354885_960_720.jpg"}
                         title={"Increibles historias que debes leer"}
                         description={"Libros que no debes perderte este verano."}
@@ -19,6 +20,7 @@ export function CarouselCards() {
                         comment={1}
                     />
                     <Article
+                        id="-2"
                         img={"https://images.pexels.com/photos/3060324/pexels-photo-3060324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
                         title={"Aventuras que atrapan"}
                         description={"Libros que no podrás parar de leer."}
@@ -26,6 +28,7 @@ export function CarouselCards() {
                         comment={0}
                     />
                     <Article
+                        id="-3"
                         img={"https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_1280.jpg"}
                         title={"Mejores novelas para este verano"}
                         description={"Apuntate esta lista de libros que tienes que leer."}

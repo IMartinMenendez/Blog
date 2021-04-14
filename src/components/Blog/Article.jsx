@@ -15,7 +15,7 @@ export function Article(props) {
                     <Card.Text>
                         {props.description}
                     </Card.Text>
-                    <Button href="/article" className="buttonCard">Leer</Button>
+                    <Button href={`/MoreReaded/${props.id}`} className="buttonCard">Leer</Button>
                 </Card.Body>
                 <Card.Footer>
                     <small className="text-muted">Last updated 3 mins ago</small>

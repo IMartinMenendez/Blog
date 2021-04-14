@@ -10,6 +10,7 @@ import {ArticlePage} from "./components/Article Page/ArticlePage";
 import {Compose} from "./components/Compose/Compose";
 import {ArticleAll} from "./components/Blog/ArticleAll";
 import {Newsletter} from "./components/Blog/Newsletter";
+import {MoreRead} from "./components/Blog/MoreRead";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route exact path="/Compose" component={Compose}/>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/newsletter" component={Newsletter}/>
+                <Route exact path="/MoreRead/:id" component={MoreRead}/>
             </Switch>
             <Footer/>
         </Router>
