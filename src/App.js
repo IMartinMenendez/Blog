@@ -9,6 +9,7 @@ import {About} from "./components/About page/About";
 import {ArticlePage} from "./components/Article Page/ArticlePage";
 import {Compose} from "./components/Compose/Compose";
 import {ArticleAll} from "./components/Blog/ArticleAll";
+import {Newsletter} from "./components/Blog/Newsletter";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/Article/:id" component={ArticlePage}/>
                 <Route exact path="/Compose" component={Compose}/>
                 <Route exact path="/" component={Home}/>
+                <Route exact path="/newsletter" component={Newsletter}/>
             </Switch>
             <Footer/>
         </Router>

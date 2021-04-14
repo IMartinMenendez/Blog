@@ -5,7 +5,7 @@ import "./Compose.css";
 export function Compose() {
     return (
         <>
-            <form action='http://localhost:3001' method="post" className="compose">
+            <form action='http://localhost:3001/compose' method="post" className="compose">
                 <div className="form">
                     <input name="password" type="text" className="form-control" id="password" placeholder="Password"/>
                 </div>
