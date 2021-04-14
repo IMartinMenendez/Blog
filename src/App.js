@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {About} from "./components/About page/About";
 import {ArticlePage} from "./components/Article Page/ArticlePage";
 import {Compose} from "./components/Compose/Compose";
+import {ArticleAll} from "./components/Blog/ArticleAll";
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
             <Header/>
             <Switch>
                 <Route exact path="/About" component={About}/>
-                <Route exact path="/Article/" component={ArticlePage}/>
+                <Route exact path="/Article/" component={ArticleAll}/>
                 <Route exact path="/Article/:id" component={ArticlePage}/>
                 <Route exact path="/Compose" component={Compose}/>
                 <Route exact path="/" component={Home}/>
