@@ -1,9 +1,16 @@
 import "./header.css"
-import React from "react";
-import {Navbar, Form, FormControl, Button, Nav} from "react-bootstrap";
+import React, {useState} from "react";
+import {Navbar, Nav, Modal} from "react-bootstrap";
 import { Link } from 'react-router-dom';
 
+
+
 export function Header() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <div className="header-area">
             <Navbar bg="light" expand="lg" variant="light">
@@ -13,14 +20,15 @@ export function Header() {
                     <Nav className="mr-auto">
                         <Nav.Link as={Link} to="/article">Artículos</Nav.Link>
                         <Nav.Link as={Link} to="/About">Sobre mi</Nav.Link>
-                        <Nav.Link as={Link} to="" title="Available soon">Tienda</Nav.Link>
+                        <Nav.Link onClick={handleShow} as={Link} to="">Tienda</Nav.Link>
                     </Nav>
-                    <Form inline className="search">
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
-                        <Button variant="outline-primary">Search</Button>
-                    </Form>
                 </Navbar.Collapse>
             </Navbar>
+            <Modal show={show} onHide={handleClose} animation={true}>
+                <Modal.Header closeButton>
+                    <Modal.Title>¡Disponible muy pronto!</Modal.Title>
+                </Modal.Header>
+            </Modal>
         </div>
     );
 }

@@ -11,10 +11,10 @@ export function Footer() {
         <div className="footer row">
             <div className="col col-lg-3 col-md-6 col-sm-6">
                 <h3>Sobre mi</h3>
-                <p>t is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                  </p>
+                <p>Soñadora incansable. Lectora boraz de novelas y libros de todo tipo. Escritora. Si te apasiona la
+                    lectura este es tú sitio, donde compartiré opiniones de mis lecturas favoritas, libros interesantes
+                    y consejos de escritura. ¿Suena bien?
+                </p>
             </div>
             <div className="col col-lg-3 col-md-6 col-sm-6">
                 <h3>Únete a la Newsletter</h3>
@@ -28,14 +28,19 @@ export function Footer() {
                 <h3>Siguenos</h3>
                 <p>Para estar siempre conectado.</p>
                 <div className="iconsFooter">
-                    <a href="https://www.facebook.com/Irene-Mart%C3%ADn-Libros-101493418043197" className="logoFooter"><img src={IconFacebook} className="icons" alt="icons"/></a>
-                    <a href="https://www.instagram.com/irene_mmenendez/" className="logoFooter"><img src={IconInstagram} className="icons" alt="icons"/></a>
-                    <a href="https://www.youtube.com" className="logoFooter"><img src={IconYoutube} className="icons" alt="icons"/></a>
+                    <a href="https://www.facebook.com/Irene-Mart%C3%ADn-Libros-101493418043197"
+                       className="logoFooter"><img src={IconFacebook} className="icons" alt="icons"/></a>
+                    <a href="https://www.instagram.com/irene_mmenendez/" className="logoFooter"><img src={IconInstagram}
+                                                                                                     className="icons"
+                                                                                                     alt="icons"/></a>
+                    <a href="https://www.youtube.com" className="logoFooter"><img src={IconYoutube} className="icons"
+                                                                                  alt="icons"/></a>
                 </div>
             </div>
 
             <div className="row">
-                <p>Made with ♥️ by <a className="linkPortfolio" href={"https://imartinmenendez.github.io/portfolio/?#home"}>Irene Martin</a></p>
+                <p>Made with ♥️ by <a className="linkPortfolio"
+                                      href={"https://imartinmenendez.github.io/portfolio/?#home"}>Irene Martin</a></p>
             </div>
 
         </div>

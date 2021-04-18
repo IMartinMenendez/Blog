@@ -1,8 +1,6 @@
 import React from "react";
 import "./ArticlePage.css";
 import {SectionAbout} from "../About page/SectionAbout";
-import {CommentsReaders} from "./CommentReaders";
-import {AddComment} from "./AddComment";
 import useFetch from 'use-http'
 
 
@@ -23,10 +21,6 @@ export function ArticlePage(props) {
                 <p className="articlePage">{data.article}
                 </p>
                 <hr className="hr-about"/>
-                {data.comments !== undefined && data.comments.map(comment =>
-                    <CommentsReaders comment={comment}/>
-                )}
-                <AddComment/>
             </>}
         </>
     )
