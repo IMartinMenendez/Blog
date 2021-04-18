@@ -19,20 +19,20 @@ export function Pagination(props) {
                     <li className="page-item">
                         <Button onClick={props.onPreviousPage} className="page-link" aria-label="Previous"
                                 disabled={props.currentPage === 0}>
-                            <span><img className="prevIcon" src={IconNext}/></span>
+                            <span><img alt="Icon" className="prevIcon" src={IconNext}/></span>
                         </Button>
                     </li>
                     {
                         pages.map(page =>
                             <li onClick={() => props.pageClicked(page)} className={props.currentPage === page ? "page-item active" : "page-item"}>
-                                <a href="#" className="page-link">{page + 1}</a>
+                                <a href={props.pageClicked} className="page-link">{page + 1}</a>
                             </li>)
                     }
 
                     <li className="page-item">
                         <Button onClick={props.onNextPage} className="page-link"
                                 disabled={(props.currentPage + 1) >= props.totalPages} aria-label="Next">
-                            <span><img className="nextIcon" src={IconNext}/></span>
+                            <span><img alt="Icon" className="nextIcon" src={IconNext}/></span>
                         </Button>
                     </li>
                 </ul>

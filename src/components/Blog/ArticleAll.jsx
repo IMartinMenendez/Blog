@@ -21,11 +21,12 @@ export function ArticleAll() {
         setPage(page - 1);
     }
 
-    const {loading, error, data} = useFetch(`http://localhost:3001/articles?page=${page}&per_page=10`, {}, [page]);
+    const {loading, error, data} = useFetch(`http://localhost:3001/articles?page=${page}&per_page=2`, {}, [page]);
     const totalPages = data !== undefined ? data.total_pages : 0;
     return (
         <>
             <Section
+                key={1}
                 title={"Todos los artículos"}/>
                 {error && 'Error'}
                 {loading && 'Loading'}

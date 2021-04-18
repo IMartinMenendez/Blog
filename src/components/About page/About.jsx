@@ -17,11 +17,13 @@ export function About() {
 
             </div>
             <SectionAbout
+                key={1}
                 title={"Libros publicados"}
                 color={"black"}
             />
             <div className="row">
                 <Book
+                    key={1}
                     img="https://m.media-amazon.com/images/I/41yawGnOVvL.jpg"
                     title="2053 - Los secretos de la muerte quedan revelados."
                 />

@@ -7,6 +7,10 @@
     margin: auto;
 }
 
+.imgArticle-Page{
+    width: -webkit-fill-available;
+}
+
 .articlePage {
     font-size: 30px;
     width: 80%;

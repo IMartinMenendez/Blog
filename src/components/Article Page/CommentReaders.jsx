@@ -6,15 +6,14 @@ export function CommentsReaders(props) {
         <div className="person-comment row">
             <div className="col-lg-2">
                 <img className="img-Comments"
-                     src={props.image}
-                     alt="comments image"/>
+                     src={props.comment.image}
+                     alt="commentsImage"/>
             </div>
             <div className="col-lg-2">
-                <p className="name"><b>{props.name}</b></p>
-                <p className="date">{props.date}</p>
-                <p className="finalComment">{props.comment}</p>
+                <p className="name"><b>{props.comment.name}</b></p>
+                <p className="date">{props.comment.date}</p>
+                <p className="finalComment">{props.comment.comment}</p>
             </div>
         </div>
-
-    )
+    );
 }

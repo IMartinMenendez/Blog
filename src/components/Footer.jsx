@@ -30,7 +30,7 @@ export function Footer() {
                 <div className="iconsFooter">
                     <a href="https://www.facebook.com/Irene-Mart%C3%ADn-Libros-101493418043197" className="logoFooter"><img src={IconFacebook} className="icons" alt="icons"/></a>
                     <a href="https://www.instagram.com/irene_mmenendez/" className="logoFooter"><img src={IconInstagram} className="icons" alt="icons"/></a>
-                    <a className="logoFooter"><img src={IconYoutube} className="icons" alt="icons"/></a>
+                    <a href="https://www.youtube.com" className="logoFooter"><img src={IconYoutube} className="icons" alt="icons"/></a>
                 </div>
             </div>
 

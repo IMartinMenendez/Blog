@@ -22,18 +22,19 @@ export function Home(props) {
         setPage(page - 1);
     }
 
-    const {loading, error, data} = useFetch(`http://localhost:3001/articles?page=${page}&per_page=2`, {}, [page]);
-    console.log("data", data);
+    const {loading, error, data} = useFetch(`http://localhost:3001/articles?page=${page}&per_page=3`, {}, [page]);
     const totalPages = data !== undefined ? data.total_pages : 0;
 
     return (
         <>
             <PictureHead/>
             <Section
+                key={1}
                 title={"Artículos más leídos"}
             />
             <CarouselCards/>
             <Section
+                key={2}
                 title={"Todos los artículos"}/>
             {error && 'Error'}
             {loading && 'Loading'}

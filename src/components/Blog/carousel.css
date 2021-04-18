@@ -8,3 +8,6 @@
     width: 20px;
 }
 
+.carousel-control-prev{
+    width: 200px!important;
+}
