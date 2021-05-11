@@ -19,7 +19,7 @@ export function Footer() {
             <div className="col col-lg-3 col-md-6 col-sm-6">
                 <h3>Únete a la Newsletter</h3>
                 <p>Estarás actualizado de las últimas novedades.</p>
-                <Form action='http://localhost:3001/' method="post" inline className="email-footer">
+                <Form action='https://immense-forest-00374.herokuapp.com/' method="post" inline className="email-footer">
                     <FormControl name="email" type="email" placeholder="Email" className="mr-sm-2"/>
                     <Button type="submit" variant="light">Send</Button>
                 </Form>

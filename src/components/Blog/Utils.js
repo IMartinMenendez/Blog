@@ -3,6 +3,7 @@ export function transformArray(collection, num) {
     let otherArray = [];
 
     for (let i = 1; i <= collection.length; i++) {
+        console.log("collections ", collection)
 
         if (i % num === 0) {
             otherArray.push(collection[i - 1]);

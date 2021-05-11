@@ -7,7 +7,7 @@ import useFetch from 'use-http';
 import {transformArray} from "./Utils";
 
 export function CarouselCards() {
-    const {loading, error, data} = useFetch(`http://localhost:3001/articles`, {}, []);
+    const {loading, error, data} = useFetch(`https://immense-forest-00374.herokuapp.com/articles/popular`, {}, []);
     return (
         <Carousel
             nextIcon={<span><img className="nextIcon" alt="IconNext" src={IconNext}/></span>}

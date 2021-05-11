@@ -1,11 +1,10 @@
 import React from "react";
 import "./ArticlePage.css";
 import {SectionAbout} from "../About page/SectionAbout";
-import useFetch from 'use-http'
-
+import useFetch from 'use-http';
 
 export function ArticlePage(props) {
-    const {loading, error, data} = useFetch(`http://localhost:3001/articles/${props.match.params.id}`, {}, [])
+    const {loading, error, data} = useFetch(`https://immense-forest-00374.herokuapp.com/articles/${props.match.params.id}`, {}, [])
     return (
         <>
             {error && 'Error'}
@@ -13,12 +12,12 @@ export function ArticlePage(props) {
             {data !== undefined &&
             <>
                 <div className="picture">
-                    <img className="imgArticle-Page" src={data.img} alt={"imageArticle"}/>
+                    <img className="imgArticle-Page" src={data.map(function(prop){return prop = prop.img})} alt={"imageArticle"}/>
                 </div>
                 <SectionAbout
-                    title={data.title}
+                    title={data.map(function(prop){return prop = prop.title})}
                 />
-                <p className="articlePage">{data.article}
+                <p className="articlePage">{data.map(function(prop){return prop = prop.article})}
                 </p>
                 <hr className="hr-about"/>
             </>}

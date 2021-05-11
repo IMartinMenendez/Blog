@@ -21,7 +21,7 @@ export function ArticleAll() {
         setPage(page - 1);
     }
 
-    const {loading, error, data} = useFetch(`http://localhost:3001/articles?page=${page}&per_page=2`, {}, [page]);
+    const {loading, error, data} = useFetch(`https://immense-forest-00374.herokuapp.com/articles?page=${page}&per_page=3`, {}, [page]);
     const totalPages = data !== undefined ? data.total_pages : 0;
     return (
         <>
@@ -34,6 +34,7 @@ export function ArticleAll() {
                 {data !== undefined && data.articles.map(article => <CardArticle article={article}/>)}
             </div>
             <Pagination
+                key={1}
                 pageClicked={pageClicked}
                 totalPages={totalPages}
                 currentPage={page}

@@ -22,7 +22,7 @@ export function Home(props) {
         setPage(page - 1);
     }
 
-    const {loading, error, data} = useFetch(`http://localhost:3001/articles?page=${page}&per_page=3`, {}, [page]);
+    const {loading, error, data} = useFetch(`https://immense-forest-00374.herokuapp.com/articles?page=${page}&per_page=3`, {}, [page]);
     const totalPages = data !== undefined ? data.total_pages : 0;
 
     return (

@@ -6,7 +6,7 @@ export function AddComment() {
     return (
         <div className="comment-form">
             <h4>Deja tu comentario</h4>
-            <form action='http://localhost:3001/article/:id' method="post">
+            <form action='https://https://immense-forest-00374.herokuapp.com/articles/:id' method="post">
                 <div className="form-group form-inline">
                     <div className="form-group col-lg-6 col-md-6 name">
                         <input type="text" className="form-control" id="name" name="name" placeholder="Enter Name"/>
