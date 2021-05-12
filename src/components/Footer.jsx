@@ -4,6 +4,7 @@ import {Button, Form, FormControl} from "react-bootstrap";
 import IconFacebook from "./Icons/facebook.png";
 import IconInstagram from "./Icons/instagram.png";
 import IconYoutube from "./Icons/youtube.png";
+import { Link } from 'react-router-dom';
 
 export function Footer() {
     return (
@@ -22,7 +23,7 @@ export function Footer() {
                 <Form action='https://immense-forest-00374.herokuapp.com/' method="post" inline
                       className="email-footer">
                     <FormControl name="email" type="email" placeholder="Email" className="mr-sm-2"/>
-                    <Button type="submit" variant="light">Send</Button>
+                    <Button as={Link} to={'/newsletter'} type="submit" variant="light">Send</Button>
                 </Form>
             </div>
             <div className="col col-lg-3 col-md-6 col-sm-6">
