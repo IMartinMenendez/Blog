@@ -3,6 +3,7 @@ import "./article.css";
 import {Card, CardDeck, Button} from "react-bootstrap";
 import IconChat from "../Icons/chat.png";
 import IconImage from "../Icons/like.png";
+import { Link } from 'react-router-dom';
 
 export function Article(props) {
     const {article} = props;
@@ -15,7 +16,7 @@ export function Article(props) {
                     <Card.Text>
                         {article.description}
                     </Card.Text>
-                    <Button href={`/article/${article.id}`} className="buttonCard">Leer</Button>
+                    <Button as={Link} to={`/article/${article.id}`} className="buttonCard">Leer</Button>
                 </Card.Body>
                 <Card.Footer>
                     <small className="text-muted">Last updated 3 mins ago</small>
