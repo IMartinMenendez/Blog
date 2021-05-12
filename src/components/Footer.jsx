@@ -11,8 +11,8 @@ export function Footer() {
 
         <div className="footer row">
             <div className="col col-lg-3 col-md-6 col-sm-6">
-                <h3>Sobre mi</h3>
-                <p>Soñadora incansable. Lectora boraz de novelas y libros de todo tipo. Escritora. Si te apasiona la
+                <h3>Sobre mí</h3>
+                <p>Soñadora incansable. Lectora voraz de novelas y libros de todo tipo. Escritora. Si te apasiona la
                     lectura este es tú sitio, donde compartiré opiniones de mis lecturas favoritas, libros interesantes
                     y consejos de escritura. ¿Suena bien?
                 </p>
@@ -27,7 +27,7 @@ export function Footer() {
                 </Form>
             </div>
             <div className="col col-lg-3 col-md-6 col-sm-6">
-                <h3>Siguenos</h3>
+                <h3>Síguenos</h3>
                 <p>Para estar siempre conectado.</p>
                 <div className="iconsFooter">
                     <a href="https://www.facebook.com/Irene-Mart%C3%ADn-Libros-101493418043197"
@@ -42,7 +42,7 @@ export function Footer() {
 
             <div className="row">
                 <p>Made with ♥️ by <a className="linkPortfolio"
-                                      href={"https://imartinmenendez.github.io/portfolio/?#home"}>Irene Martin</a></p>
+                                      href={"https://imartinmenendez.github.io/portfolio/?#home"}>Irene Martín</a></p>
             </div>
 
         </div>
